@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Titans Backstories & Recruitment</title>
+    <link rel="stylesheet" href="titans.css">
+</head>
+<body>
+
+    <nav>
+        <a href="ttintro.html">Home</a>
+        <a href="ttoverview.html">Season Overview</a>
+        <a href="ttstory.html">Character Backgrounds</a>
+    </nav>
+
+    <h1>The Origins of the Teen Titans</h1>
+    <hr>
+
+    <p>Every member of the team comes from a <i>unique</i> background. Before they moved into the tower, each had their <b>own</b> stories and pasts.</p>
+
+    <table>
+        <tr>
+            <th>Member</th>
+            <th>Original Home</th>
+            <th>Backstory Snippet</th>
+        </tr>
+        <tr>
+            <td>Robin</td>
+            <td>Gotham City</td>
+            <td>The former protege of Batman who moved to Jump City to lead his own team.</td>
+        </tr>
+        <tr>
+            <td>Starfire</td>
+            <td>Tamaran</td>
+            <td>An alien princess who escaped her duties as a princess to find a home on Earth.</td>
+        </tr>
+        <tr>
+            <td>Cyborg</td>
+            <td>Detroit</td>
+            <td>A star athlete rebuilt with cybernetic parts after a tragic accident.</td>
+        </tr>
+        <tr>
+            <td>Raven</td>
+            <td>Azarath</td>
+            <td>The daughter of the demon Trigon who had escaped from his grasp.</td>
+        </tr>
+        <tr>
+            <td>Beast Boy</td>
+            <td>Upper Lamumba</td>
+            <td>After contracting a rare illness, he was given a serum that turned him green and gave him animal powers.</td>
+        </tr>
+    </table>
+
+    <br>
+    <hr>
+
+    <h3>Titans Recruitment Form</h3>
+    <form>
+        <label for="heroname">Hero Alias:</label><br>
+        <input type="text" id="heroname" name="heroname" placeholder="e.g. Nightwing"><br><br>
+
+        <label for="mentor">Choose a Mentor:</label><br>
+        <select id="mentor" name="mentor">
+            <option value="robin">Robin</option>
+            <option value="cyborg">Cyborg</option>
+            <option value="raven">Raven</option>
+            <option value="beastboy">Beast Boy</option>
+            <option value="starfire">Starfire</option>
+        </select><br><br>
+
+        <p>Preferred Training Time:</p>
+        <input type="radio" id="day" name="time" value="day">
+        <label for="day">Day Shift</label>
+        <input type="radio" id="night" name="time" value="night">
+        <label for="night">Night Shift</label><br><br>
+
+        <input type="submit" value="Send Application">
+        <input type="reset" value="Clear Form">
+    </form>
+
+</body>
+</html>

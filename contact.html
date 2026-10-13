@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact &amp; Career Quiz | Cybersecurity Career Roadmap</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">&#128737; CyberRoadmap</a>
+            <button id="hamburger-btn" class="hamburger">&#9776;</button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="learning-paths.html">Learning Paths</a></li>
+                <li><a href="gallery.html">Resource Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact / Quiz</a></li>
+                <li><button id="theme-toggle" class="theme-btn">&#9728;&#65039; Light Mode</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Contact &amp; Career Quiz</h1>
+        <p>Tell us about yourself and we will recommend the best cybersecurity path for you.</p>
+    </header>
+
+    <main>
+
+        <section class="fade-in">
+            <h2>Find Your Cyber Career Path</h2>
+            <p>
+                Fill out the form below completely and click <b>"Submit &amp; Get My Path"</b>.
+                Our tool will analyze your answers and give you a <em>personalized recommendation</em>.
+            </p>
+            <hr>
+        </section>
+
+        <div class="form-container fade-in">
+            <form id="contact-form" novalidate>
+
+                <div class="form-group">
+                    <label for="fullname">&#128100; Full Name <span style="color:#ff4444;">*</span></label>
+                    <input type="text" id="fullname" name="fullname" placeholder="e.g. Jane Smith">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">&#128140; Email Address <span style="color:#ff4444;">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="e.g. jane@example.com">
+                </div>
+
+                <hr>
+
+                <div class="form-group">
+                    <label>&#127358; Experience Level <span style="color:#ff4444;">*</span></label>
+                    <div id="radio-group" class="radio-group">
+                        <label>
+                            <input type="radio" name="experience" value="complete beginner">
+                            Complete Beginner — I am brand new to IT and cybersecurity
+                        </label>
+                        <label>
+                            <input type="radio" name="experience" value="IT professional">
+                            IT Professional — I work in IT but want to move into security
+                        </label>
+                        <label>
+                            <input type="radio" name="experience" value="security student">
+                            Security Student — I am currently studying cybersecurity
+                        </label>
+                        <label>
+                            <input type="radio" name="experience" value="career changer">
+                            Career Changer — I am switching from a non-IT field
+                        </label>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="form-group">
+                    <label>&#9989; Areas That Interest You <span style="color:#ff4444;">*</span></label>
+                    <p style="font-size:0.85em; color:#8b949e; margin-bottom:8px;">Select all that apply.</p>
+                    <div id="check-group" class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="interests" value="Ethical Hacking">
+                            &#128308; Ethical Hacking &amp; Penetration Testing
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interests" value="SOC & Monitoring">
+                            &#128309; SOC Work &amp; Security Monitoring
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interests" value="Cloud Security">
+                            &#9729;&#65039; Cloud Security
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interests" value="Digital Forensics">
+                            &#128270; Digital Forensics &amp; Incident Response
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interests" value="Malware Analysis">
+                            &#129440; Malware Analysis &amp; Reverse Engineering
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interests" value="GRC & Policy">
+                            &#128203; Governance, Risk &amp; Compliance (GRC)
+                        </label>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="form-group">
+                    <label for="career-path">&#127919; Preferred Career Path <span style="color:#ff4444;">*</span></label>
+                    <select id="career-path" name="career-path">
+                        <option value="">-- Select a career path --</option>
+                        <option value="pentester">&#128308; Penetration Tester / Ethical Hacker</option>
+                        <option value="soc">&#128309; SOC Analyst / Blue Team</option>
+                        <option value="cloud">&#9729;&#65039; Cloud Security Engineer</option>
+                        <option value="forensics">&#128270; Digital Forensics Analyst</option>
+                        <option value="general">&#128737; Not Sure Yet — Show Me General Path</option>
+                    </select>
+                </div>
+
+                <hr>
+
+                <div class="form-group">
+                    <label for="message">
+                        &#128172; Tell Us More About Your Goals
+                        <span style="color:#ff4444;">*</span>
+                    </label>
+                    <textarea id="message" name="message"
+                        placeholder="e.g. I want to become a penetration tester within 2 years. I have basic Python knowledge and want to know which certs to pursue first...">
+                    </textarea>
+                    <p style="font-size:0.8em; color:#8b949e;">Minimum 10 characters.</p>
+                </div>
+
+                <hr>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-submit">&#127919; Submit &amp; Get My Path</button>
+                    <button type="reset" class="btn btn-reset">&#8635; Reset Form</button>
+                </div>
+
+            </form>
+
+            <div id="result-box"></div>
+        </div>
+
+        <hr>
+
+    </main>
+
+    <footer>
+        <p>
+            <a href="index.html">Home</a> &bull;
+            <a href="certifications.html">Certifications</a> &bull;
+            <a href="learning-paths.html">Learning Paths</a> &bull;
+            <a href="gallery.html">Gallery</a> &bull;
+            <a href="contact.html">Contact</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
